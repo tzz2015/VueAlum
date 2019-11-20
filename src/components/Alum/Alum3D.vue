@@ -99,7 +99,7 @@ export default {
       WebkitTransform: 'translateZ(' + this.hideBoxHeight + 'vw)'
     }
     this.open_maxbox2 = {
-      WebkitTransform: 'rotateX(180deg) translateZ(' + this.hideBoxHeight + 'vw)'
+      WebkitTransform: 'rotateY(180deg) translateZ(' + this.hideBoxHeight + 'vw)'
     }
     this.open_maxbox3 = {
       WebkitTransform: 'rotateX(-90deg) translateZ(' + this.hideBoxHeight + 'vw)'
@@ -191,7 +191,7 @@ export default {
   /**后*/
   .minbox li:nth-child(2) {
     background-size: 150px 150px;
-    -webkit-transform: rotateX(180deg) translateZ(75px);
+    -webkit-transform: rotateY(180deg) translateZ(75px);
   }
 
   /**下*/
@@ -247,7 +247,7 @@ export default {
   .maxbox li:nth-child(2) {
     background: transparent no-repeat 0 0;
     background-size: 200px 200px;
-    -webkit-transform: rotateX(180deg) translateZ(100px);
+    -webkit-transform: rotateY(180deg) translateZ(100px);
   }
 
   .maxbox li:nth-child(3) {
