@@ -1,6 +1,6 @@
 import axios from 'axios'
 import qs from 'qs'
-import { Toast } from 'mint-ui';
+import { Toast } from 'mint-ui'
 export default {
   handleResp: function (context, resp, resolve, reject) {
     console.log(resp.data)
