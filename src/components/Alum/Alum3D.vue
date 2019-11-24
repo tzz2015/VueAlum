@@ -59,8 +59,8 @@ export default {
     }
   },
   created () {
-    if (this.$route.params.key) {
-      this.key = this.$route.params.key
+    if (this.$route.query.key) {
+      this.key = this.$route.query.key
       console.log('获取到key:' + this.key)
       this.getOrderDetail()
     }

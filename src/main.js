@@ -20,6 +20,7 @@ Vue.directive('title', {
     document.title = el.dataset.title
   }
 })
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
