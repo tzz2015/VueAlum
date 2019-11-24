@@ -99,7 +99,7 @@ export default {
           if (res) {
             if (res.data !== null || res.data !== undefined) {
               // 审核通过
-              if (res.data.pay_status) {
+              if (res.data.pay_status !== undefined) {
                 if (res.data.pay_status === 0) {
                   that.getAlumDetail()
                   // 未审核
