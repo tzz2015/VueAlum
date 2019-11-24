@@ -98,14 +98,14 @@ export default {
         .then(res => {
           if (res) {
             if (res.data !== null || res.data !== undefined) {
-              // 审核通过
+              // 未审核
               if (res.data.pay_status !== undefined) {
                 if (res.data.pay_status === 0) {
-                  that.getAlumDetail()
-                  // 未审核
-                } else if (res.data.pay_status === 1) {
-                  // 审核中
                   MessageBox('提示', '酷炫3D相册打赏后才能看哦！')
+                  // 审核通过
+                } else if (res.data.pay_status === 1) {
+                  that.getAlumDetail()
+                  // 审核中
                 } else {
                   MessageBox('提示', '打赏审核中，审核通过才能看哦！如太久没审核过，请加微信IT9923')
                 }
