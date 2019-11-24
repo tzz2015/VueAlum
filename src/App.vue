@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-title data-title="你怎么那么好看">
     <router-view/>
   </div>
 </template>
